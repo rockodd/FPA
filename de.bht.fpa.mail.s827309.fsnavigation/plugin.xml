@@ -34,5 +34,22 @@
             file="contexts.xml">
       </contexts>
    </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="de.bht.fpa.mail.s827309.fsnavigation.NavigationView"
+            id="de.bht.fpa.mail.s827309.fsnavigation.view1"
+            name="name"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="de.bht.fpa.mail.s827309.fsnavigation.PerspectiveFactory1"
+            id="de.bht.fpa.mail.s827309.fsnavigation.perspective1"
+            name="NavPerspective">
+      </perspective>
+   </extension>
 
 </plugin>

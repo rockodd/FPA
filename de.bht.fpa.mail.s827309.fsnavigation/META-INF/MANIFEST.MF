@@ -5,6 +5,7 @@ Bundle-SymbolicName: de.bht.fpa.mail.s827309.fsnavigation;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: de.bht.fpa.mail.s827309.fsnavigation.Activator
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ de.bht.fpa.mail.s000000.common
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
