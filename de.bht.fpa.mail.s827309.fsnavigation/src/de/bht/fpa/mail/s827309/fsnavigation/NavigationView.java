@@ -1,5 +1,7 @@
 package de.bht.fpa.mail.s827309.fsnavigation;
 
+import java.io.File;
+
 import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
@@ -10,11 +12,12 @@ public class NavigationView extends ViewPart{
   @Override
   public void createPartControl(Composite parent) {
   
-    TreeViewer viewer = new TreeViewer(parent, SWT.NONE);
+    TreeViewer viewer = new TreeViewer(parent);
     
-    viewer.setContentProvider(new FsContentProvider());
-    viewer.setLabelProvider(new FsLabelProvider());
-    viewer.setInput("Input");
+    viewer.setContentProvider(new NsNavigationContentProvider());
+    // 
+    viewer.setLabelProvider(new FsNavigationLabel());
+    viewer.setInput(new FolderItem(new File(System.getProperty("user.home"))));
     
   }
 
