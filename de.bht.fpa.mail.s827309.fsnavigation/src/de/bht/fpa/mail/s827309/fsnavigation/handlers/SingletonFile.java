@@ -1,0 +1,41 @@
+package de.bht.fpa.mail.s827309.fsnavigation.handlers;
+
+import java.util.Observable;
+
+/**
+ * Observer, welcher auf Aktuallisierung des Pfades wartet, wenn neuer Pfad im
+ * Getter übergeben wurde, werden die Observer
+ */
+public final class SingletonFile extends Observable {
+  private String path;
+
+  private SingletonFile() {
+
+  }
+
+  private static SingletonFile instance = new SingletonFile();
+
+  public static SingletonFile getInstance() {
+    return instance;
+  }
+
+  /**
+   * Setter, um Pfad zu übergeben.
+   */
+  public void setpath(String path) {
+
+    this.path = path;
+    setChanged();
+
+    // dem Observer muss der Pfad mit übergeben werden
+    notifyObservers(path);
+  }
+
+  /**
+   * Getter,liefert gesetzten Pfad zurück.
+   */
+  public String getpath() {
+    return path;
+  }
+
+}
