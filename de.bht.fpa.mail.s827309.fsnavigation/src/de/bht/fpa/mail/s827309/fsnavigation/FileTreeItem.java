@@ -38,6 +38,7 @@ public abstract class FileTreeItem implements IMessageTreeItem {
 	@Override
 	public List<IMessageTreeItem> getChildren() {
 		return null;
+		// könnte auch hier leere Liste zurück geben ohne "kinder"
 	}
 
 	@Override

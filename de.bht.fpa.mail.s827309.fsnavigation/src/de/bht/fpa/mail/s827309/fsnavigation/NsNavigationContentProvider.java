@@ -4,7 +4,7 @@ import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.jface.viewers.Viewer;
 
 public class NsNavigationContentProvider implements ITreeContentProvider {
-
+		// hier muss unsere Baumstruktur in die des ITreeCOntentProvider gecastet werden.
 	
 	// Einfüge Content Provider stellt innere FIlestruktur dar
 	// stellt eigentliche Baumstruktur zur verfügung

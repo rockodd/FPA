@@ -34,6 +34,8 @@ public class SetBaseDirHandler extends AbstractHandler {
 		// JFace nutzen
 		System.out.println(choosenPath);
 		// Patterns nutzen um letzte Pathes zu speichern.
+		SingletonFile file = SingletonFile.getInstance();
+		file.setpath(choosenPath);
 //		MessageDialog.openInformation(
 //				window.getShell(),
 //				"Fsnavigation",

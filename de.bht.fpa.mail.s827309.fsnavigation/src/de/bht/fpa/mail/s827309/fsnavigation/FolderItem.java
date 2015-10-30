@@ -21,13 +21,16 @@ public class FolderItem extends FileTreeItem {
 	
 	@Override
 	public boolean hasChildren() {
-		// TODO Auto-generated method stub
-		return file.list() != null;
+		// FOlde rkann Children haben
+		return file.list() != null; // lässt sich alle Elemente geben die nicht null sind
 	}
+	
 	
 	@Override
 	public List<IMessageTreeItem> getChildren() {
-		ArrayList<IMessageTreeItem> children = new ArrayList<>();
+		ArrayList<IMessageTreeItem> children = new ArrayList<IMessageTreeItem>();
+		if (file == null || file.listFiles() == null || file.listFiles().length == 0)
+			return children;
 		
 		for(File item : file.listFiles()){
 			if (item.isDirectory()){
@@ -39,5 +42,6 @@ public class FolderItem extends FileTreeItem {
 		
 		return children;
 	}
+	
 	
 }
