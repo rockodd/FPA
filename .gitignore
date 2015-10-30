@@ -1,56 +1,41 @@
-# JAVA Files #
+###################################
+# gitignore RPC Eclipse Files
+#
+###################################
 
+# Maven artifacts
+*/target/**
+
+# Generated OSGI Bundle manifest
+MANIFEST.MF
+
+# Diff artifacts
+*.orig
+
+# Java binaries
 *.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Package files
 *.jar
 *.war
 *.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-#Eclipse Files #
-
-*.pydevproject
-.metadata
-.gradle
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-
-# Eclipse Core
+# Eclipse project files
 .project
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# JDT-specific (Eclipse Java Development Tools)
 .classpath
+.settings/
+.metadata/
 
-# Java annotation processor (APT)
-.factorypath
+# Generated eclipse files
+feature.xml
+feature.properties
 
-# PDT-specific
-.buildpath
+# Netbeans project files
+nbactions.xml
+nb-configuration.xml
 
-# sbteclipse plugin
-.target
-
-# TeXlipse plugin
-.texlipse
+# IDEA project files
+.idea/
+*.iml
+*.ipr
+*.iws
