@@ -6,8 +6,10 @@
 # Maven artifacts
 */target/**
 
+#######################
 # Generated OSGI Bundle manifest
-MANIFEST.MF
+# MANIFEST.MF
+#######################
 
 # Diff artifacts
 *.orig
@@ -20,11 +22,13 @@ MANIFEST.MF
 *.war
 *.ear
 
+################################
 # Eclipse project files
-.project
-.classpath
-.settings/
+#.project
+#.classpath
+#.settings/
 .metadata/
+################################
 
 # Generated eclipse files
 feature.xml
