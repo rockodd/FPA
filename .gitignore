@@ -27,7 +27,7 @@
 #.project
 #.classpath
 #.settings/
-.metadata/
+#.metadata/
 ################################
 
 # Generated eclipse files

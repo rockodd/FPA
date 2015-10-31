@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.DirectoryDialog"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.viewers.LabelProvider"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.viewers.IStructuredSelection"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="de.bht.fpa.mail.s000000.common.mail.model.Message"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="de.bht.fpa.mail.s827309.fsnavigation.BaseDirSubject"/>
+<fullyQualifiedTypeName name="java.util.Observable"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.viewers.Viewer"/>
+<fullyQualifiedTypeName name="de.bht.fpa.mail.s000000.common.mail.model.IMessageTreeItem"/>
+<fullyQualifiedTypeName name="de.bht.fpa.mail.s827309.fsnavigation.FolderItem"/>
+<fullyQualifiedTypeName name="java.util.Observer"/>
+<fullyQualifiedTypeName name="de.bht.fpa.mail.s827309.fsnavigation.handlers.SingletonFile"/>
+<fullyQualifiedTypeName name="java.util.prefs.Preferences"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.preferences.IPreferencesService"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.Platform"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.preferences.IEclipsePreferences"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.preferences.ConfigurationScope"/>
+<fullyQualifiedTypeName name="de.bht.fpa.mail.s827309.fsnavigation.NavigationView"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.Preferences"/>
+<fullyQualifiedTypeName name="org.osgi.service.prefs.Preferences"/>
+<fullyQualifiedTypeName name="de.bht.fpa.mail.s827309.fsnavigation.handlers.SetBaseDirHandler"/>
+</qualifiedTypeNameHistroy>

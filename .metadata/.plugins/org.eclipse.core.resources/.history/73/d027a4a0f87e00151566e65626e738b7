@@ -1,0 +1,14 @@
+package de.bht.fpa.mail.s827309.fsnavigation.handlers;
+
+import java.util.Observable;
+
+public class SingletonFile extends Observable {
+	private SingletonFile(){
+		
+	}
+	private static SingletonFile instance = new SingletonFile();
+
+	public static SingletonFile getInstance(){
+		return instance;
+	}
+}

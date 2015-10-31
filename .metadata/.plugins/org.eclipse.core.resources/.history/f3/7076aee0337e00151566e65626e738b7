@@ -1,0 +1,64 @@
+package de.bht.fpa.mail.s827309.fsnavigation;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Observable;
+
+import org.eclipse.jface.viewers.ISelectionChangedListener;
+import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.jface.viewers.SelectionChangedEvent;
+import org.eclipse.jface.viewers.TreeViewer;
+import org.eclipse.jface.viewers.Viewer;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.part.ViewPart;
+
+import de.bht.fpa.mail.s000000.common.mail.model.IMessageTreeItem;
+import de.bht.fpa.mail.s000000.common.mail.model.Message;
+
+public class NavigationView extends ViewPart implements
+		ISelectionChangedListener {
+	
+	private TreeViewer viewer;
+
+	@Override
+	public void createPartControl(Composite parent) {
+
+		TreeViewer viewer = new TreeViewer(parent);
+
+		viewer.setContentProvider(new NsNavigationContentProvider());
+		//
+		viewer.setLabelProvider(new FsNavigationLabel());
+
+		viewer.setInput(new FolderItem(	new File(System.getProperty("user.home"))));
+		viewer.addSelectionChangedListener(this);
+
+		String path = System.getProperty("user.home");
+		IMessageTreeItem in = new FolderItem(new File(path));
+		//BaseDirSubject.getInstance().addObserver(this);
+		viewer.setInput(in);
+	}
+
+	@Override
+	public void setFocus() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void selectionChanged(SelectionChangedEvent event) {
+		// TODO Auto-generated method stub
+		IStructuredSelection ts = (IStructuredSelection) event.getSelection();
+		IMessageTreeItem ti = (IMessageTreeItem) ts.getFirstElement();
+
+		//List<Message> messages = ti.getMessages();
+	}
+	public void update (Observable baseDir, String path){
+		IMessageTreeItem newIn = new FolderItem(new File(path));
+		viewer.setInput(newIn);
+		
+		
+	}
+	
+}
